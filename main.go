@@ -12,6 +12,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"github.com/ashoknitin/quotes-api/models"	
 	"strconv"
+	"os"
 
 	
 )
@@ -50,10 +51,11 @@ func main() {
 		quotes: models.QuoteModel{DB: client},
 	}
 
+	port := os.Getenv("PORT")
 	router := env.router()
 	srv := &http.Server{
 		Handler: router,
-		Addr:    "127.0.0.1:9100",
+		Addr:    ":"+port,
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
 	}
