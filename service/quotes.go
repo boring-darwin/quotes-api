@@ -11,8 +11,8 @@ type Data struct {
 }
 
 
-func TestingQoutes() string{
-	return "Qoutes Testing"
+func Welcome() string{
+	return "Welcome to quotes API"
 }
 
 func GetJsonResponse()([]byte, error){
