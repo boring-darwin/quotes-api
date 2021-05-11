@@ -36,7 +36,8 @@ func (env *Env) router() *mux.Router {
 // Initiate web server
 func main() {
 
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://nitinashok:nitin28295@spacecrusader.hi2jd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"))
+	mongoURL := os.Getenv("MONGO_DB_URL")
+	client, err := mongo.NewClient(options.Client().ApplyURI(mongoURL))
 	if err != nil {
 		log.Fatal(err)
 	}
