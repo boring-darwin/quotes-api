@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ashoknitin/quotes-api/models"
-	"github.com/ashoknitin/quotes-api/service"
+	"github.com/boring-darwin/quotes-api/models"
+	"github.com/boring-darwin/quotes-api/service"
 	"github.com/gorilla/mux"
 )
 

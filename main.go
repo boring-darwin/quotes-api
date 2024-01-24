@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ashoknitin/quotes-api/controller"
-	"github.com/ashoknitin/quotes-api/service"
+	"github.com/boring-darwin/quotes-api/controller"
+	"github.com/boring-darwin/quotes-api/service"
 )
 
 // type Env struct {

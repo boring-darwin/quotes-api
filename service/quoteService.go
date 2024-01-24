@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/ashoknitin/quotes-api/models"
+	"github.com/boring-darwin/quotes-api/models"
 )
 
 type Data struct {

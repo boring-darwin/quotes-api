@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ashoknitin/quotes-api/models"
+	"github.com/boring-darwin/quotes-api/models"
 )
 
 func main() {
