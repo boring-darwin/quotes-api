@@ -1,4 +1,4 @@
-module github.com/ashoknitin/quotes-api
+module github.com/boring-darwin/quotes-api
 
 go 1.16
 
